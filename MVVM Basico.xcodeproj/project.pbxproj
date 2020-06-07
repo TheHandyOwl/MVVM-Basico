@@ -212,9 +212,9 @@
 			productReference = 074A66D1248D46FF005F2986 /* MVVM Navegable.app */;
 			productType = "com.apple.product-type.application";
 		};
-		07C9C13E2464AF27001A79DF /* MVVM Básico */ = {
+		07C9C13E2464AF27001A79DF /* MVVM Basico */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07C9C1532464AF29001A79DF /* Build configuration list for PBXNativeTarget "MVVM Básico" */;
+			buildConfigurationList = 07C9C1532464AF29001A79DF /* Build configuration list for PBXNativeTarget "MVVM Basico" */;
 			buildPhases = (
 				07C9C13B2464AF27001A79DF /* Sources */,
 				07C9C13C2464AF27001A79DF /* Frameworks */,
@@ -224,7 +224,7 @@
 			);
 			dependencies = (
 			);
-			name = "MVVM Básico";
+			name = "MVVM Basico";
 			productName = "MVVM Básico";
 			productReference = 07C9C13F2464AF27001A79DF /* MVVM Basico.app */;
 			productType = "com.apple.product-type.application";
@@ -247,7 +247,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 07C9C13A2464AF27001A79DF /* Build configuration list for PBXProject "MVVM Básico" */;
+			buildConfigurationList = 07C9C13A2464AF27001A79DF /* Build configuration list for PBXProject "MVVM Basico" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -260,7 +260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				07C9C13E2464AF27001A79DF /* MVVM Básico */,
+				07C9C13E2464AF27001A79DF /* MVVM Basico */,
 				074A66D0248D46FF005F2986 /* MVVM Navegable */,
 			);
 		};
@@ -518,7 +518,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "MVVM Básico/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM Basico/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -537,7 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = "MVVM Básico/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVVM Basico/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,7 +562,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07C9C13A2464AF27001A79DF /* Build configuration list for PBXProject "MVVM Básico" */ = {
+		07C9C13A2464AF27001A79DF /* Build configuration list for PBXProject "MVVM Basico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07C9C1512464AF29001A79DF /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		07C9C1532464AF29001A79DF /* Build configuration list for PBXNativeTarget "MVVM Básico" */ = {
+		07C9C1532464AF29001A79DF /* Build configuration list for PBXNativeTarget "MVVM Basico" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				07C9C1542464AF29001A79DF /* Debug */,

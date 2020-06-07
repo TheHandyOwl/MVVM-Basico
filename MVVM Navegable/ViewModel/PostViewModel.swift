@@ -10,37 +10,26 @@ import Foundation
 
 class PostViewModel {
     
+    var refreshData = { () -> () in }
+    var webService = WebService()
     
-    // Enlazar vista con modelo
-    var refreshData = { () -> () in } // Devuelve los datos actualizados
-    
-    // Fuente de datos
     var dataArray : [Post] = [] {
         didSet {
             refreshData()
         }
     }
     
-    // Esto se sacaría en un refactor y pasarlo a capa Connection y llamarlo aquí
-    // Obtener los datos de la API
-    func retrieveDataList() {
-        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            
-            guard let json = data else { return }
-            
-            // Serializar datos
-            do {
-                let decoder = JSONDecoder()
-                self.dataArray = try decoder.decode([Post].self, from: json)
-            } catch let error {
-                print("Ha ocurrido un error \(error.localizedDescription)")
-            }
-            
-        }.resume()
-        
+    func getPostsList() {
+        webService.fetchPostsList(successCompletion: { [weak self] (listModel) in
+            guard let hasList = listModel else { return }
+            self?.dataArray = hasList
+            //print("hasList: \(hasList)")
+        }) { (error) in
+            guard let hasError = error else { return }
+            print("Error: \(hasError)")
+        }
     }
+    
     
     
     

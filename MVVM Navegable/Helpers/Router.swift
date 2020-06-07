@@ -6,4 +6,14 @@
 //  Copyright © 2020 TestCompany. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Router {
+    
+    func goToDetailViewController(navigationController: UINavigationController?, post: Post) {
+        let vc = DetailViewController()
+        vc.postData = post
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+}

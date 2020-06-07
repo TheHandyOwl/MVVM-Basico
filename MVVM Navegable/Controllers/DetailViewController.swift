@@ -10,21 +10,30 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var detailLabel: UILabel!
+    
+    var postData : Post?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        setupUI()
+        
+        configureView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func setupUI() {
+        titleLabel.sizeToFit()
+        detailLabel.sizeToFit()
     }
-    */
+    
+    func configureView() {
+        if let title = postData?.title,
+            let body = postData?.body {
+            titleLabel.text = title
+            detailLabel.text = "\(body)\n\(body)\n\(body)\n\(body)\n\(body)\n\(body)\n\(body)\n\(body)\n\(body)\n\(body)"
+        }
+    }
 
 }
