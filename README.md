@@ -4,11 +4,16 @@ Meteorology - Swift 5
 ----------
 
 ## SetUp
+
 git clone https://github.com/TheHandyOwl/MVVM-Basico
 
-## App
-- MVVM-Basico with 1 main view. Basic table without helpers
-- MVVM-Navegable with 2 views and helpers:
+
+## Targets
+
+MVVM-Basico with 1 main view. Basic table without helpers
+
+MVVM-Navegable with 2 views and helpers:
+
 <ul>
 	<li>
 		Tables
